@@ -10,26 +10,23 @@
     <title>SRW | Shofiya and Royyan's Wedding</title>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-        <div class="container">
-        </div>
-      </nav>
-  
-      <!-- Showcase -->
-      <section class="section-a">
-        <div class="container">
-          <img src="img/shofiyaroyyan.jpeg" alt="" />
-        </div>
-      </section>
-    </header>
+  <header>  
+    <!-- Showcase -->
+    <section class="section-a">
+      <div class="container frame">
+        <span class="helper"></span>
+        <img src="img/shofiyaroyyan.jpeg" height=250 />
+      </div>
+    </section>
+  </header>
 
-      <script src="js/simple-lightbox.min.js"></script>
-      <script>
-        (function() {          
-          $('body').fadeIn(200);
-          var $gallery = new SimpleLightbox('.gallery a', {});
-        })();
-      </script>
+  <script src="js/simple-lightbox.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script>
+    (function() {          
+      $('body').fadeIn(200);
+      var $gallery = new SimpleLightbox('.gallery a', {});
+    })();
+  </script>
 </body>
 </html>
