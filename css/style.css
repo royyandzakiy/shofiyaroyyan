@@ -91,6 +91,16 @@
     align-items: center;
     justify-content: center;
   }
+
+  .section-a img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 30%;
+    margin-top: -250px; /* Half the height */
+    margin-left: -250px; /* Half the width */
+  }
   
   .section-a h1 {
     font-size: 4rem;
