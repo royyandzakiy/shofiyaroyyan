@@ -34,6 +34,41 @@ body, h1, h2, h3, h4, p {
   font-family: 'Cochin';
 }
 
+/* BASIC ELEMENTS */
+h1 {}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 100;
+  padding-right: .3em;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 1.3em;
+  font-weight: 200;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+.third-color {
+  color: var(--third-color);
+}
+
 /* Custom Flex Elements */
 
 div {
@@ -89,8 +124,6 @@ section#b {
 
   section#b img.image-hero {
     max-height: 250px;
-    height: auto;
-    width: auto;
   }
 
 section#c {
@@ -171,56 +204,50 @@ section#d {
     content: "Website in Progress...";
   } */
 
-#hummingbird-flower {
-  /* position: fixed;
-  margin-left: -150px; */
+.image-side {
+  /* position: fixed; */
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  height: 600px;
+  width: fit-content;
   position: absolute;
-  left: 0px;
   z-index: -1;
 }
+  
+  .image-side img {
+    /* border: 1px solid purple;  */
+  }
 
-#albatross-beach {
-  /* position: fixed;
-  margin-left: 400px; */
-  position: absolute;
-  right: 0px;
-  z-index: -2;
-}
+  .image-side#hummingbird-flower {
+    /* margin-left: -150px; */
+    left: 0px;
+  }
 
-/* BASIC ELEMENTS */
-    h1 {}
+  .image-side#albatross-beach {
+    /* margin-left: 400px; */
+    right: 0px;
+  }
 
-    h2 {
-      font-size: 2.5em;
-      font-weight: 100;
-      padding-right: .3em;
-    }
+  .image-side img#hummingbird {
+    position: relative;
+    left: 0px;
+  }
 
-    h3 {
-      font-size: 2em;
-      font-weight: 100;
-    }
+  .image-side img#flower {
+    position: relative;
+    left: 0px;
+  }
 
-    h4 {
-      font-size: 1.3em;
-      font-weight: 200;
-    }
+  .image-side img#albatross {
+    position: relative;
+    right: 0px;
+  }
 
-    p {
-      font-size: 1.1em;
-    }
-
-    .italic {
-      font-style: italic;
-    }
-
-    .secondary-color {
-      color: var(--secondary-color);
-    }
-
-    .third-color {
-      color: var(--third-color);
-    }
+  .image-side img#beach {
+    position: relative;
+    right: 0px;
+  }
 
 @media screen and (max-width: 991px) {
   /* start of large tablet styles */
@@ -232,7 +259,7 @@ section#d {
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
 /* start of phone styles */
   body {
     line-height: 1.3;
@@ -258,9 +285,44 @@ section#d {
     min-height: 640px;
   }
 
-  img.image-side {
-    display: none;
+  .image-side {
+    /* position: fixed; */
+    position: absolute;
+    z-index: -1;
   }
+  
+    .image-side#hummingbird-flower {
+      /* margin-left: -150px; */
+      left: -200px;
+    }
+
+    .image-side#albatross-beach {
+      /* margin-left: 400px; */
+      right: -200px;
+    }
+
+    .image-side img#hummingbird {
+      position: relative;
+      left: 80px;
+      top: -20px;
+    }
+  
+    .image-side img#flower {
+      position: relative;
+      left: 0px;
+    }
+  
+    .image-side img#albatross {
+      position: relative;
+      right: 80px;
+      top: 50px;
+    }
+  
+    .image-side img#beach {
+      position: relative;
+      right: 0px;
+    }
+
 
   section#b {
     /* display: none; */
@@ -291,7 +353,6 @@ section#d {
     flex-direction: column;
     justify-content: center;
   }
-
 
   section#d {
     margin-top: 20px;
