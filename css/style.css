@@ -163,16 +163,20 @@ section#c {
       flex-flow: row;
       align-items: center;
       justify-content: flex-start;
+      padding-top: 30px;
     }
-
-    #countdown div {
+    
+    #countdown div div {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: flex-start;
     }
 
     #countdown-day {
       font-size: 1.3em;
+      line-height: 1em;
+      height: 40px;
     }
 
 section#d {
@@ -322,7 +326,7 @@ section#d {
   
     .image-side img#albatross {
       position: relative;
-      right: 40px;
+      right: 60px;
       top: -20px;
       width: 90%;
     }
@@ -390,7 +394,7 @@ section#d {
 
   .image-side img#albatross {
     position: relative;
-    right: 0px;
+    right: 40px;
     top: -130px;
     width: 70%;
   }
