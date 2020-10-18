@@ -15,9 +15,9 @@
 }
 
 :root {
-  --primary-color: #9E7D33;
+  --primary-color: #A17A32;
   --secondary-color: #4E523C;
-  --third-color: #8F9F62;
+  --third-color: #889958;
 }
 
 * {
@@ -120,6 +120,7 @@ section#b {
 
   section#b img.image-hero {
     max-height: 250px;
+    color: var(--primary-color);
   }
 
 section#c {
