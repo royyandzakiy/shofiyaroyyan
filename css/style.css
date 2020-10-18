@@ -107,9 +107,9 @@ section#c {
     /* background-color: pink; */
   }
 
-  #time div div {
-    width: fit-content;
-  }
+    #time div div {
+      width: fit-content;
+    }
 
     #dates {
       display: flex;
@@ -124,6 +124,7 @@ section#c {
 
     #countdown {
       display: flex;
+      flex-flow: row;
       align-items: center;
       justify-content: flex-start;
     }
@@ -155,14 +156,18 @@ section#d {
   } */
 
 #hummingbird-flower {
-  position: fixed;
-  margin-left: -150px;
+  /* position: fixed;
+  margin-left: -150px; */
+  position: absolute;
+  left: 0px;
   z-index: -1;
 }
 
 #albatross-beach {
-  position: fixed;
-  margin-left: 400px;
+  /* position: fixed;
+  margin-left: 400px; */
+  position: absolute;
+  right: 0px;
   z-index: -2;
 }
 
