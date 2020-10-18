@@ -72,7 +72,6 @@ p {
 /* Custom Flex Elements */
 
 div {
-  /* border: 1px solid red; */
 }
 
   .horizontal {
@@ -95,18 +94,18 @@ header {
 }
 
 main {
-  /* border: 1px solid green; */
   height: 100vh;
   margin: 0 auto;
   max-width: 700px;
   max-height: 900px;
   display: flex;
+  position: relative;
+  overflow: visible;
   flex-flow: column;
   justify-content: space-around;
 }
 
 section {
-  /* border: 1px solid purple; */
   display: flex;
   flex-flow: column;
   margin: auto;
@@ -141,7 +140,6 @@ section#c {
 
   #time div.container {
     min-width: 200px;
-    /* background-color: pink; */
   }
 
     #time div div {
@@ -152,7 +150,6 @@ section#c {
       display: flex;
       flex-flow: column;
       align-items: center;
-      /* border: 1px solid blue; */
     }
 
     #dates-date {
@@ -215,18 +212,25 @@ section#d {
   z-index: -1;
 }
   
-  .image-side img {
-    /* border: 1px solid purple;  */
+  .image-side {
+    /* display: none; */
+    /* position: fixed; */
+    position: absolute;
+    width: fit-content;
+    display: flex;
+    flex-flow: column;
+
+    z-index: 1;
   }
 
   .image-side#hummingbird-flower {
     /* margin-left: -150px; */
-    left: 0px;
+    left: -200px;
   }
 
   .image-side#albatross-beach {
     /* margin-left: 400px; */
-    right: 0px;
+    right: -200px;
   }
 
   .image-side img#hummingbird {
@@ -248,16 +252,6 @@ section#d {
     position: relative;
     right: 0px;
   }
-
-@media screen and (max-width: 991px) {
-  /* start of large tablet styles */
-  
-}
-
-@media screen and (max-width: 767px) {
-/* start of medium tablet styles */
-
-}
 
 @media screen and (max-width: 700px) {
 /* start of phone styles */
@@ -283,22 +277,21 @@ section#d {
 
   main {
     min-height: 640px;
+    height: 100vh;
+    overflow: hidden;
   }
 
   .image-side {
-    /* position: fixed; */
-    position: absolute;
-    z-index: -1;
   }
   
     .image-side#hummingbird-flower {
       /* margin-left: -150px; */
-      left: -200px;
+      left: -150px;
     }
 
     .image-side#albatross-beach {
       /* margin-left: 400px; */
-      right: -200px;
+      right: -150px;
     }
 
     .image-side img#hummingbird {
@@ -314,15 +307,14 @@ section#d {
   
     .image-side img#albatross {
       position: relative;
-      right: 80px;
-      top: 50px;
+      right: 60px;
+      top: 60px;
     }
   
     .image-side img#beach {
       position: relative;
       right: 0px;
     }
-
 
   section#b {
     /* display: none; */
@@ -357,4 +349,45 @@ section#d {
   section#d {
     margin-top: 20px;
   }
+}
+
+@media screen and (max-width: 450px) {
+  .image-side#hummingbird-flower {
+    /* margin-left: -150px; */
+    left: -200px;
+  }
+
+  .image-side#albatross-beach {
+    /* margin-left: 400px; */
+    right: -200px;
+  }
+
+  .image-side img#hummingbird {
+    position: relative;
+    left: 80px;
+    top: -70px;
+  }
+
+  .image-side img#flower {
+    position: relative;
+    left: 0px;
+  }
+
+  .image-side img#albatross {
+    position: relative;
+    right: 60px;
+    top: 0px;
+  }
+
+  .image-side img#beach {
+    position: relative;
+    right: 0px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  /* start of really small screen styles */
+  .image-side {
+    display: none;
+  } 
 }
