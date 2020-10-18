@@ -222,26 +222,6 @@ section#d {
       color: var(--third-color);
     }
 
-@media (max-width: 700px) {
-  .section .container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .section .container div:first-child {
-    order: 2;
-  }
-
-  .section .container div:nth-child(2) {
-    order: -1;
-  }
-
-  .section img {
-    width: 100%;
-    margin: auto;
-  }
-}
-
 @media screen and (max-width: 991px) {
   /* start of large tablet styles */
   
