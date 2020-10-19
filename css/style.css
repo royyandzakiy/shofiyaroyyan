@@ -121,20 +121,24 @@ section#b {
 
   section#b p#wed {
     display: flex;
-    transition: .4s;
+    opacity: 1;
   }
 
   section#b p#tale {
-    display: none;
-    transition: .4s;
+    display: flex;
+    opacity: 0;
+    position: relative;
+    top: -27px;
   }
 
   section#b:hover p#wed {
-    display: none;
+    /* animation: fade reverse linear ease-in .3s; */
+    opacity: 0;
   }
 
   section#b:hover p#tale {
-    display: flex;
+    animation: fadein .7s ease-in both;
+    opacity: 1;
   }
 
   section#b img.image-hero {
@@ -147,22 +151,39 @@ section#b {
     margin-top: -250px;
     opacity: 0;
   }
-  
-  @keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
+
+  section#b img.image-hero#sr {
   }
   
   section#b:hover img.image-hero#sr {
-    /* animation: fadein .2s reverse; */
     opacity: 0;
   }
   
   section#b:hover img.image-hero#ha {
-    animation: fadein 1s;
+    animation: fadein .7s ease-in both, riseup .7s ease-in both;
     opacity: 1;
   }
 
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes riseup {
+    from {
+      margin-top: -250px;
+      margin-bottom: 0px;
+    }
+    to {
+      margin-top: -255px;
+      margin-bottom: 5px;
+    }
+  }
+  
 section#c {
   display: inline-flex;
   flex-direction: row;
