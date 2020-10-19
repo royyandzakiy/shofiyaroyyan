@@ -24,7 +24,28 @@ main.mousemove(function(e) {
     });
 });
 
-/* Loader */
+/* Loader animation */
 $(window).on("load",function(){
   $(".loader-wrapper").fadeOut("slow");
+});
+
+/* Countdown */
+var countDownDate = new Date("Oct 30, 2020 8:00:00 GMT-0700").getTime();
+
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+  document.getElementById("countdown-day-span").innerHTML = days;
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown-day-span").innerHTML = "0";
+  }
+}, 1000);
+
+/* Counter Up animation */
+$('.counter').counterUp({
+  delay: 10,
+  time: 700
 });
