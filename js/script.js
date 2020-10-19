@@ -7,8 +7,8 @@ var albatross = $('#albatross');
 
 /* Floating object with MouseMove */
 main.mousemove(function(e) {
-    var valueX = (e.pageX * -1 /  100);
-    var valueY = (e.pageY * -1 /  100);
+    var valueX = (e.pageX * -1 /  30);
+    var valueY = (e.pageY * -1 /  30);
 
     hummingbird.css({
     'transform':'translate3d('+valueX+'px,'+valueY+'px,0)'
