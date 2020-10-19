@@ -119,6 +119,10 @@ section#b {
   transition: 0.4s;
 }
 
+  section#b p span {
+    margin-left: 6px;
+  }
+
   section#b p#wed {
     display: flex;
     opacity: 1;
@@ -495,7 +499,7 @@ section#d {
   .image-side img#albatross {
     position: relative;
     right: 40px;
-    top: -130px;
+    top: -110px;
     width: 70%;
   }
 
@@ -506,7 +510,7 @@ section#d {
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 300px) {
   /* small screen styles */
   /* hide images */
   .image-side {
