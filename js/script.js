@@ -23,3 +23,8 @@ main.mousemove(function(e) {
     'transform':'translate3d('+valueX+'px,'+valueY+'px,0)'
     });
 });
+
+/* Loader */
+$(window).on("load",function(){
+  $(".loader-wrapper").fadeOut("slow");
+});
