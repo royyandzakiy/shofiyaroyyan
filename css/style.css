@@ -129,6 +129,7 @@ section#b {
     opacity: 0;
     position: relative;
     top: -27px;
+    justify-content: center;
   }
 
   section#b:hover p#wed {
@@ -417,6 +418,31 @@ section#d {
       max-height: 250px;
       height: auto;
       width: 300px;
+    }
+
+      section#b p#tale {
+        /* opacity: 1; */
+        top: -16px;
+      }
+
+      section#b img.image-hero#ha {
+        /* opacity: 1; */
+        margin-top: -150px;
+      }
+
+      section#b:hover img.image-hero#ha {
+        opacity: 1;
+      }
+
+    @keyframes riseup {
+      from {
+        margin-top: -150px;
+        margin-bottom: 0px;
+      }
+      to {
+        margin-top: -155px;
+        margin-bottom: 5px;
+      }
     }
 
   section#c {
