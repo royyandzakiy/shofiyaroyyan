@@ -113,7 +113,7 @@ section {
 }
 
 section#a {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 section#b {
@@ -256,7 +256,7 @@ section#c {
     }
 
 section#d {
-  margin-top: 90px;
+  margin-top: 10px;
 }
 
   section#d #separator:before {

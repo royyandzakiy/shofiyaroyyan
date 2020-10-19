@@ -30,12 +30,15 @@ $(window).on("load",function(){
 });
 
 /* Countdown */
-var countDownDate = new Date("Oct 30, 2020 8:00:00 GMT-0700").getTime();
+var countDownDate = new Date("Oct 30, 2020 8:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.ceil((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+  if (hours >= 8) days++;
 
   document.getElementById("countdown-day-span").innerHTML = days;
   if (distance < 0) {
