@@ -47,5 +47,5 @@ var x = setInterval(function() {
 /* Counter Up animation */
 $('.counter').counterUp({
   delay: 10,
-  time: 700
+  time: 1100
 });
