@@ -1,13 +1,14 @@
+/* 
+  Courtesy of royyandzakiy (https://github.com/royyandzakiy)
+*/
 var main = $('main');
 var hummingbird = $('#hummingbird');
 var albatross = $('#albatross');
 
+/* Floating object with MouseMove */
 main.mousemove(function(e) {
     var valueX = (e.pageX * -1 /  100);
     var valueY = (e.pageY * -1 /  100);
-
-    console.log('valueX: ' + valueX);
-    console.log('valueY: ' + valueY);
 
     hummingbird.css({
     'transform':'translate3d('+valueX+'px,'+valueY+'px,0)'
