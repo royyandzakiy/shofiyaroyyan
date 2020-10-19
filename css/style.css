@@ -31,6 +31,7 @@ body {
   background:url(../img/Background_WebAsset.jpg) center center repeat;
   line-height: 1.6;
   color: var(--primary-color);
+  height: 100vh;
 }
 
 body, h1, h2, h3, h4, p {
@@ -94,12 +95,13 @@ main {
   height: 100vh;
   margin: 0 auto;
   max-width: 100vw;
-  max-height: 900px;
+  /* max-height: 900px; */
   display: flex;
   position: relative;
   overflow: hidden;
   flex-flow: column;
   justify-content: space-around;
+  /* background-color: yellow; */
 }
 
 section {
@@ -304,10 +306,12 @@ section#d {
 
   .image-side#hummingbird-flower {
     left: 0px;
+    bottom: 0px;
   }
 
   .image-side#albatross-beach {
     right: 0px;
+    bottom: 0px;
   }
 
   .image-side img#hummingbird {
@@ -323,6 +327,7 @@ section#d {
   .image-side img#albatross {
     position: relative;
     right: -20px;
+    top: -120px;
   }
 
   .image-side img#beach {
@@ -383,7 +388,6 @@ section#d {
 
   main {
     min-height: 640px;
-    height: 100vh;
     overflow: hidden;
   }
 
@@ -409,8 +413,8 @@ section#d {
   
     .image-side img#albatross {
       position: relative;
-      right: 60px;
-      top: -20px;
+      right: 40px;
+      top: -160px;
       width: 90%;
     }
   
@@ -488,7 +492,7 @@ section#d {
 
   .image-side img#hummingbird {
     position: relative;
-    left: 80px;
+    left: 90px;
     top: -70px;
   }
 
@@ -500,9 +504,9 @@ section#d {
 
   .image-side img#albatross {
     position: relative;
-    right: 40px;
-    top: -110px;
-    width: 70%;
+    right: 10px;
+    top: -200px;
+    width: 60%;
   }
 
   .image-side img#beach {
