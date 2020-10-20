@@ -18,6 +18,7 @@
   --primary-color: #A17A32;
   --secondary-color: #4E523C;
   --third-color: #889958;
+  --fourth-color: #F9F9F7;
 }
 
 * {
@@ -27,7 +28,7 @@
 }
 
 body {
-  background-color: #F9F9F7;
+  background-color: var(--fourth-color);
   background:url(../img/Background_WebAsset.jpg) center center repeat;
   line-height: 1.6;
   color: var(--primary-color);
@@ -112,181 +113,6 @@ section {
   justify-content: center;
 }
 
-section#a {
-  margin-top: 20px;
-}
-
-section#b {
-  margin-top: 50px;
-  transition: 0.4s;
-}
-
-  section#b p span {
-    margin-left: 6px;
-  }
-
-  section#b p#wed {
-    display: flex;
-    opacity: 1;
-  }
-
-  section#b p#tale {
-    display: flex;
-    opacity: 0;
-    position: relative;
-    top: -27px;
-    justify-content: center;
-  }
-
-  section#b:hover p#wed {
-    /* animation: fade reverse linear ease-in .3s; */
-    opacity: 0;
-  }
-
-  section#b:hover p#tale {
-    animation: fadein .7s ease-in both;
-    opacity: 1;
-  }
-
-  section#b img.image-hero {
-    max-height: 250px;
-    opacity: 1;
-  }
-
-  section#b img.image-hero#ha {
-    display: relative;
-    margin-top: -250px;
-    opacity: 0;
-  }
-
-  section#b img.image-hero#sr {
-  }
-  
-  section#b:hover img.image-hero#sr {
-    opacity: 0;
-  }
-  
-  section#b:hover img.image-hero#ha {
-    animation: fadein .7s ease-in both, riseup .7s ease-in both;
-    opacity: 1;
-  }
-
-  @keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes riseup {
-    from {
-      margin-top: -250px;
-      margin-bottom: 0px;
-    }
-    to {
-      margin-top: -255px;
-      margin-bottom: 5px;
-    }
-  }
-  
-section#c {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: inherit;
-  transition: flyin 10s ease-in linear;
-}
-
-@keyframes flyin {
-  start {top: 0px;}
-  end {top: 40px;}
-}
-
-  section#c p {
-    color: var(--primary-color);
-  }
-
-  section#c #separator {
-    width: 0px;
-    background-color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
-  }
-
-  #time div.container {
-    min-width: 200px;
-  }
-
-    #time div div {
-      width: fit-content;
-    }
-
-    #dates {
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-    }
-
-    #dates-date {
-      font-size: 1.3em;
-    }
-
-    #countdown {
-      display: flex;
-      flex-flow: row;
-      align-items: center;
-      justify-content: flex-start;
-      padding-top: 30px;
-      padding-bottom: 25px;
-    }
-    
-    #countdown div div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    }
-
-    #countdown-day {
-      font-size: 1.3em;
-      line-height: 1em;
-      height: 40px;
-      padding-top: 5px;
-    }
-
-section#d {
-  margin-top: 10px;
-}
-
-  section#d #separator:before {
-    content: "";
-    display: block;
-    width: 120px;
-    background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    margin: 1em auto;
-    transition: 0.4s;
-  }
-
-  section#d p.change-text span {
-    position: relative;
-    content:'Wedding in Progress...';
-    transition: 0.4s;
-  }
-  
-  section#d:hover #separator:before {
-    width: 50px;
-  }
-
-  section#d:hover p.change-text span {
-    display: none;
-  }
-
-  section#d:hover p.change-text:after {
-    content: 'Website in Progress...';
-  }
-
 .image-side {
   display: flex;
   flex-flow: column;
@@ -335,6 +161,182 @@ section#d {
     right: 0px;
   }
 
+/* MAIN-1 */
+#main-1 section#a {
+  margin-top: 20px;
+}
+
+#main-1 section#b {
+  margin-top: 50px;
+  transition: 0.4s;
+}
+
+  #main-1 section#b p span {
+    margin-left: 6px;
+  }
+
+  #main-1 section#b p#wed {
+    display: flex;
+    opacity: 1;
+  }
+
+  #main-1 section#b p#tale {
+    display: flex;
+    opacity: 0;
+    position: relative;
+    top: -27px;
+    justify-content: center;
+  }
+
+  #main-1 section#b:hover p#wed {
+    /* animation: fade reverse linear ease-in .3s; */
+    opacity: 0;
+  }
+
+  #main-1 section#b:hover p#tale {
+    animation: fadein .7s ease-in both;
+    opacity: 1;
+  }
+
+  #main-1 section#b img.image-hero {
+    max-height: 250px;
+    opacity: 1;
+  }
+
+  #main-1 section#b img.image-hero#ha {
+    display: relative;
+    margin-top: -250px;
+    opacity: 0;
+  }
+
+  #main-1 section#b img.image-hero#sr {
+  }
+  
+  #main-1 section#b:hover img.image-hero#sr {
+    opacity: 0;
+  }
+  
+  #main-1 section#b:hover img.image-hero#ha {
+    animation: fadein .7s ease-in both, riseup .7s ease-in both;
+    opacity: 1;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes riseup {
+    from {
+      margin-top: -250px;
+      margin-bottom: 0px;
+    }
+    to {
+      margin-top: -255px;
+      margin-bottom: 5px;
+    }
+  }
+  
+#main-1 section#c {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: inherit;
+  transition: flyin 10s ease-in linear;
+}
+
+@keyframes flyin {
+  start {top: 0px;}
+  end {top: 40px;}
+}
+
+  #main-1 section#c p {
+    color: var(--primary-color);
+  }
+
+  #main-1 section#c #separator {
+    width: 0px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+  }
+
+  #time div.container {
+    min-width: 200px;
+  }
+
+    #time div div {
+      width: fit-content;
+    }
+
+    #dates {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+
+    #dates-date {
+      font-size: 1.3em;
+    }
+
+    #countdown {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 30px;
+      padding-bottom: 25px;
+    }
+    
+    #countdown div div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    #countdown-day {
+      font-size: 1.3em;
+      line-height: 1em;
+      height: 40px;
+      padding-top: 5px;
+    }
+
+#main-1 section#d {
+  margin-top: 10px;
+}
+
+  #main-1 section#d #separator:before {
+    content: "";
+    display: block;
+    width: 120px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    margin: 1em auto;
+    transition: 0.4s;
+  }
+
+  #main-1 section#d p.change-text span {
+    position: relative;
+    content:'Wedding in Progress...';
+    transition: 0.4s;
+  }
+  
+  #main-1 section#d:hover #separator:before {
+    width: 50px;
+  }
+
+  #main-1 section#d:hover p.change-text span {
+    display: none;
+  }
+
+  #main-1 section#d:hover p.change-text:after {
+    content: 'Website in Progress...';
+  }
+
 @media screen and (max-width: 900px) {
   /* tablet styles */
   .image-side#hummingbird-flower {
@@ -366,6 +368,16 @@ section#d {
     right: -70px;
     width: 80%;
   }
+}
+
+/* MAIN-2 */
+#main-2 {
+  flex-flow: row;
+}
+
+#main-2 section {
+  height: 100vh;
+  width: 100vw;
 }
 
 @media screen and (max-width: 700px) {
@@ -424,23 +436,23 @@ section#d {
       width: 70%;
     }
 
-    section#b img.image-hero {
+    #main-1 section#b img.image-hero {
       max-height: 250px;
       height: auto;
       width: 300px;
     }
 
-      section#b p#tale {
+      #main-1 section#b p#tale {
         /* opacity: 1; */
         top: -16px;
       }
 
-      section#b img.image-hero#ha {
+      #main-1 section#b img.image-hero#ha {
         /* opacity: 1; */
         margin-top: -150px;
       }
 
-      section#b:hover img.image-hero#ha {
+      #main-1 section#b:hover img.image-hero#ha {
         opacity: 1;
       }
 
@@ -455,27 +467,27 @@ section#d {
       }
     }
 
-  section#c {
+  #main-1 section#c {
     align-items: center;
   }
 
-    section#c #separator {
+    #main-1 section#c #separator {
       display: none;
       margin: 25px;
       width: 100px;
       background-color: var(--secondary-color);
     }
 
-    section #countdown {
+    #main-1 section#c #countdown {
       margin-top: 20px;
     }
 
-  section#c {
+  #main-1 section#c {
     flex-direction: column;
     justify-content: center;
   }
 
-  section#d {
+  #main-1 section#d {
     margin-top: 20px;
   }
 }
@@ -542,6 +554,7 @@ section#d {
   width: 30px;
   height: 30px;
   position: relative;
+  margin: 0 auto;
   border: 4px solid var(--primary-color);
   animation: loader 2s infinite ease;
 }
