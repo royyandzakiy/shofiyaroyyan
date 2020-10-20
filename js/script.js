@@ -24,11 +24,6 @@ main.mousemove(function(e) {
     });
 });
 
-/* Loader animation */
-$(window).on("load",function(){
-  $(".loader-wrapper").fadeOut("slow");
-});
-
 /* Countdown */
 var countDownDate = new Date("Oct 30, 2020 8:00:00").getTime();
 
@@ -47,8 +42,13 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-/* Counter Up animation */
-$('.counter').counterUp({
-  delay: 10,
-  time: 1100
+/* Loader animation */
+$(window).on("load",function(){
+  $(".loader-wrapper").fadeOut("slow");
+  
+  /* Counter Up animation */
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1100
+  });
 });
