@@ -463,7 +463,7 @@ iframe {
         font-size: 2em;
         position: relative;
         top: -30px;
-        display: flex;
+        display: none;
         justify-content: center;
     }
     .arrow#left {
