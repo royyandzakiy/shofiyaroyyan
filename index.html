@@ -25,8 +25,9 @@
     <title>Shofiya and Royyan's Wedding</title>
 </head>
 
-<body>
-    <div id="wrapper">
+<body onload="myFunction()">
+    <div id="loader"></div>
+    <div class='animate-bottom' style="display:none;" id="wrapper">
         <!-- <div class="loader-wrapper"></div> -->
         <main id="main-1">
             <div class="image-side" id="hummingbird-flower"><img alt="" id="hummingbird" src="img/Left_Kolibri_WebAsset.png"> <img alt="" id="flower" src="img/Left_Bunga_WebAsset.png"></div>
@@ -123,6 +124,19 @@
             </section>
         </main>
     </div>
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 1000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementsByTagName("BODY")[0].style.background = "url('../img/Background_WebAsset.jpg') center center repeat";
+            document.getElementById("wrapper").style.display = "block";
+        }
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
