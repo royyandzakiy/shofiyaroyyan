@@ -431,3 +431,51 @@ iframe {
         top: 70px;
     }
 }
+
+/* // Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .cd-modal-action .btn#left {
+        left: -3em;
+        -webkit-transition: color 0.2s 0.3s, left 0.3s 0s;
+        -moz-transition: color 0.2s 0.3s, left 0.3s 0s;
+        transition: color 0.2s 0.3s, left 0.3s 0s;
+    }
+    .cd-modal-action .btn#right {
+        position: relative;
+        text-align: right;
+        top: 20%;
+        right: -3em;
+        -webkit-transition: color 0.2s 0.3s, right 0.3s 0s;
+        -moz-transition: color 0.2s 0.3s, right 0.3s 0s;
+        transition: color 0.2s 0.3s, right 0.3s 0s;
+    }
+    .cd-modal-action .btn {
+        position: relative;
+        border-radius: 5em;
+        width: 5em;
+        height: 5em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .arrow {
+        color: white;
+        font-size: 2em;
+        position: relative;
+        top: -30px;
+        display: flex;
+        justify-content: center;
+    }
+    .arrow#left {
+        right: -50px;
+    }
+    .arrow#right {
+        left: -50px;
+    }
+    .cd-section .cd-modal-action-text p {
+        font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1em;
+        line-height: 1.4em;
+        max-width: 370px;
+    }
+}
