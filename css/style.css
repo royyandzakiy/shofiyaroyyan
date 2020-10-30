@@ -2,7 +2,7 @@
  * @ Author: Royyan Dzakiy
  * @ Create Time: 2020-10-20 22:08:02
  * @ Modified by: Royyan Dzakiy
- * @ Modified time: 2020-10-29 22:15:18
+ * @ Modified time: 2020-10-30 20:21:38
  * @ Description: Courtesy of royyandzakiy (https://github.com/royyandzakiy)
  */
 
@@ -446,13 +446,13 @@ section {
     width: 50px;
 }
 
-#main-1 section#d:hover p.change-text span {
+/* #main-1 section#d:hover p.change-text span {
     display: none;
-}
+} */
 
-#main-1 section#d:hover p.change-text:after {
+/* #main-1 section#d:hover p.change-text:after {
     content: 'Website in Progress...';
-}
+} */
 
 
 /* MAIN 2 */
