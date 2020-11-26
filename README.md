@@ -7,7 +7,10 @@ It is made to inform family and friends about our happy day.
 
 It is fully mobile-friendly, and consists of a landing page, articles, and live streaming page.
 
-## https://shofiyaroyyan.com
+
+Check it out!
+
+## [shofiyaroyyan.com](https://shofiyaroyyan.com)
 
 #### Screenshots:
 
